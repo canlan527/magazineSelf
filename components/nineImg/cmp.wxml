@@ -1,0 +1,10 @@
+<view class="container">
+    <view catch:tap="onTap" class="img-container">
+        <image wx:for="{{imgSrc}}" wx:key="{{index}}" src="{{item}}" catch:tap="onTap" data-index="{{index}}" wx:if="{{index < 9}}"></image>
+        <text class="img-num" wx:if="{{imgSrc.length > 9}}">{{imgSrc.length}}</text>
+    </view>
+    <view class="text-container">
+        <text>{{mainTitle}}师德师风电话费送</text>
+    </view>
+    <!-- 人生最难的是等待；最美的是有值得等待的东西。 -->
+</view>
